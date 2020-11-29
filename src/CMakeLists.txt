@@ -1,0 +1,69 @@
+cmake_minimum_required(VERSION 3.17)
+project(src)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(.)
+include_directories(incbin)
+include_directories(nnue)
+include_directories(nnue/architectures)
+include_directories(nnue/features)
+include_directories(nnue/layers)
+include_directories(syzygy)
+
+add_executable(src
+        incbin/incbin.h
+        nnue/architectures/halfkp_256x2-32-32.h
+        nnue/features/feature_set.h
+        nnue/features/features_common.h
+        nnue/features/half_kp.cpp
+        nnue/features/half_kp.h
+        nnue/features/index_list.h
+        nnue/layers/affine_transform.h
+        nnue/layers/clipped_relu.h
+        nnue/layers/input_slice.h
+        nnue/evaluate_nnue.cpp
+        nnue/evaluate_nnue.h
+        nnue/nnue_accumulator.h
+        nnue/nnue_architecture.h
+        nnue/nnue_common.h
+        nnue/nnue_feature_transformer.h
+        syzygy/tbprobe.cpp
+        syzygy/tbprobe.h
+        benchmark.cpp
+        bitbase.cpp
+        bitboard.cpp
+        bitboard.h
+        endgame.cpp
+        endgame.h
+        evaluate.cpp
+        evaluate.h
+        main.cpp
+        material.cpp
+        material.h
+        misc.cpp
+        misc.h
+        movegen.cpp
+        movegen.h
+        movepick.cpp
+        movepick.h
+        pawns.cpp
+        pawns.h
+        position.cpp
+        position.h
+        psqt.cpp
+        search.cpp
+        search.h
+        thread.cpp
+        thread.h
+        thread_win32_osx.h
+        timeman.cpp
+        timeman.h
+        tt.cpp
+        tt.h
+        tune.cpp
+        tune.h
+        types.h
+        uci.cpp
+        uci.h
+        ucioption.cpp StockFishWrapper.cpp StockFishWrapper.h CommunicationsWizard.cpp CommunicationsWizard.h)

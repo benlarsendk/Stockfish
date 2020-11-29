@@ -26,28 +26,23 @@
 #include "tt.h"
 #include "uci.h"
 #include "syzygy/tbprobe.h"
+#include "CommunicationsWizard.h"
+#include "StockFishWrapper.h"
 
-namespace PSQT {
-  void init();
-}
 
 int main(int argc, char* argv[]) {
 
-  std::cout << engine_info() << std::endl;
+  StockFishWrapper wrapper;
+  CommunicationsWizard::Instance().addListener(&wrapper);
 
-  CommandLine::init(argc, argv);
-  UCI::init(Options);
-  Tune::init();
-  PSQT::init();
-  Bitboards::init();
-  Position::init();
-  Bitbases::init();
-  Endgames::init();
-  Threads.set(size_t(Options["Threads"]));
-  Search::clear(); // After threads are up
-  Eval::NNUE::init();
+  wrapper.initializeNewGame();
+ // wrapper.setNewPosition("r3k2r/1p2b3/2n2n2/p3p1pp/QP4b1/B3P3/P2P2PP/R3KB1R w Qkq - 2 17");
+  wrapper.go(26);
+  //getline(std::cin, cmd);
+ // UCI::loop(argc, argv);
 
-  UCI::loop(argc, argv);
+
+ for(;;){}
 
   Threads.set(0);
   return 0;

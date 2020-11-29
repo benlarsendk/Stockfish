@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="src"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/benlar/Documents/Stockfish/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/benlar/Documents/Stockfish/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/benlar/Documents/Stockfish/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/benlar/Documents/Stockfish/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/benlar/Documents/Stockfish/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/benlar/Documents/Stockfish/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/benlar/Documents/Stockfish/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/benlar/Documents/Stockfish/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/benlar/Documents/Stockfish/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/benlar/Documents/Stockfish/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/benlar/Documents/Stockfish/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/benlar/Documents/Stockfish/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/benlar/Documents/Stockfish/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/benlar/Documents/Stockfish/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/benlar/Documents/Stockfish/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="src">
+				<Option output="/home/benlar/Documents/Stockfish/src/cmake-build-debug/src" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/benlar/Documents/Stockfish/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/benlar/Documents/Stockfish/src/."/>
+					<Add directory="/home/benlar/Documents/Stockfish/src/incbin"/>
+					<Add directory="/home/benlar/Documents/Stockfish/src/nnue"/>
+					<Add directory="/home/benlar/Documents/Stockfish/src/nnue/architectures"/>
+					<Add directory="/home/benlar/Documents/Stockfish/src/nnue/features"/>
+					<Add directory="/home/benlar/Documents/Stockfish/src/nnue/layers"/>
+					<Add directory="/home/benlar/Documents/Stockfish/src/syzygy"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/benlar/Documents/Stockfish/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 src"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/benlar/Documents/Stockfish/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/benlar/Documents/Stockfish/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/benlar/Documents/Stockfish/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="src/fast">
+				<Option output="/home/benlar/Documents/Stockfish/src/cmake-build-debug/src" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/benlar/Documents/Stockfish/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/benlar/Documents/Stockfish/src/."/>
+					<Add directory="/home/benlar/Documents/Stockfish/src/incbin"/>
+					<Add directory="/home/benlar/Documents/Stockfish/src/nnue"/>
+					<Add directory="/home/benlar/Documents/Stockfish/src/nnue/architectures"/>
+					<Add directory="/home/benlar/Documents/Stockfish/src/nnue/features"/>
+					<Add directory="/home/benlar/Documents/Stockfish/src/nnue/layers"/>
+					<Add directory="/home/benlar/Documents/Stockfish/src/syzygy"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/benlar/Documents/Stockfish/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 src/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/benlar/Documents/Stockfish/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/benlar/Documents/Stockfish/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/benlar/Documents/Stockfish/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/CommunicationsWizard.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/CommunicationsWizard.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/StockFishWrapper.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/StockFishWrapper.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/benchmark.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/bitbase.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/bitboard.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/bitboard.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/endgame.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/endgame.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/evaluate.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/evaluate.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/incbin/incbin.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/main.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/material.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/material.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/misc.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/misc.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/movegen.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/movegen.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/movepick.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/movepick.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/nnue/architectures/halfkp_256x2-32-32.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/nnue/evaluate_nnue.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/nnue/evaluate_nnue.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/nnue/features/feature_set.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/nnue/features/features_common.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/nnue/features/half_kp.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/nnue/features/half_kp.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/nnue/features/index_list.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/nnue/layers/affine_transform.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/nnue/layers/clipped_relu.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/nnue/layers/input_slice.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/nnue/nnue_accumulator.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/nnue/nnue_architecture.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/nnue/nnue_common.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/nnue/nnue_feature_transformer.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/pawns.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/pawns.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/position.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/position.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/psqt.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/search.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/search.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/syzygy/tbprobe.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/syzygy/tbprobe.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/thread.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/thread.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/thread_win32_osx.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/timeman.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/timeman.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/tt.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/tt.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/tune.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/tune.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/types.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/uci.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/uci.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/ucioption.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/benlar/Documents/Stockfish/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

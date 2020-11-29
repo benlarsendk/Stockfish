@@ -34,6 +34,7 @@
 #include "tt.h"
 #include "uci.h"
 #include "syzygy/tbprobe.h"
+#include "CommunicationsWizard.h"
 
 namespace Search {
 
@@ -277,7 +278,8 @@ void MainThread::search() {
   if (bestThread != this)
       sync_cout << UCI::pv(bestThread->rootPos, bestThread->completedDepth, -VALUE_INFINITE, VALUE_INFINITE) << sync_endl;
 
-  sync_cout << "bestmove " << UCI::move(bestThread->rootMoves[0].pv[0], rootPos.is_chess960());
+    sync_cout << "bestmove " << UCI::move(bestThread->rootMoves[0].pv[0], rootPos.is_chess960());
+    CommunicationsWizard::Instance().mediateBestMove(UCI::move(bestThread->rootMoves[0].pv[0], rootPos.is_chess960()));
 
   if (bestThread->rootMoves[0].pv.size() > 1 || bestThread->rootMoves[0].extract_ponder_from_tt(rootPos))
       std::cout << " ponder " << UCI::move(bestThread->rootMoves[0].pv[1], rootPos.is_chess960());
@@ -1855,7 +1857,8 @@ string UCI::pv(const Position& pos, Depth depth, Value alpha, Value beta) {
   uint64_t nodesSearched = Threads.nodes_searched();
   uint64_t tbHits = Threads.tb_hits() + (TB::RootInTB ? rootMoves.size() : 0);
 
-  for (size_t i = 0; i < multiPV; ++i)
+
+    for (size_t i = 0; i < multiPV; ++i)
   {
       bool updated = rootMoves[i].score != -VALUE_INFINITE;
 
@@ -1880,6 +1883,7 @@ string UCI::pv(const Position& pos, Depth depth, Value alpha, Value beta) {
          << " multipv "  << i + 1
          << " score "    << UCI::value(v);
 
+      CommunicationsWizard::Instance().mediateCP(UCI::value(v));
       if (Options["UCI_ShowWDL"])
           ss << UCI::wdl(v, pos.game_ply());
 
